@@ -1,0 +1,97 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <style>
+ fieldset {border: 2px solid #000;}     
+ </style>
+ <title>ECHO</title>
+</head>
+
+<body>
+<h4>ECHO THE REQUEST PARAMETERS 2</h4>
+<form method="post" action="REchoServlet" name="echo">
+	<fieldset>
+	<legend>Dati Personali</legend>
+	  <label for="nome">Nome/Ragione Sociale </label><br>
+	  <input type="text" name="nome" value="" maxlength="10" autofocus required/>
+	  <br>
+	  <label for="cognome">Cognome </label><br>
+	  <input type="text" name="cognome" value=""/>
+	  <br>
+	  <label for="iva">CF o Partita Iva </label><br>
+	  <input type="text" name="iva" value=""/>
+	  <br>
+	  <label for="password">Password </label><br>
+	  <input type="password" name="password" value=""/>
+	  <br> 
+	  <label for="email">Email </label><br>
+	  <input type="text" name="email" value=""/>
+	  <br>
+  </fieldset>
+  <fieldset>
+  <legend>Indirizzo </legend>
+	  <label for="indirizzo">Indirizzo </label><br>
+	  <input type="text" name="indirizzo" value="" placeholder="Via/Viale/Piazza" required/>
+	  <br>
+	    <label for="cap">CAP </label><br>
+	  <input type="text" name="cap" value=""/>
+	  <br>
+	  <label for="citta">Città</label><br>
+	  <input type="text" name="citta" value=""/>
+	  <br>
+	  <label for="provincia">Provincia </label><br>
+	  <input type="text" name="provincia" value="" />
+	</fieldset>
+	<fieldset>
+	<legend>Pagamenti</legend>
+	  <br>
+	  <label for="carta">Numero Carta di credito </label><br>
+	  <input type="text" name="carta" value="" maxlength="12" autofocus required/>
+	  <br>
+	  <label for="scadenza">Data Scadenza </label><br>
+	  <input type="text" name="scadenza" value="" 
+	    placeholder="00/00" required/>
+	  <br>
+	  <label for="codice">Codice segreto</label><br>
+	  <input type="password" name="codice" value="" />
+	  <br>
+	</fieldset>
+  <br>   
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+</form>
+</body>
+</html>
+
+
+
+<!-- 
+nome o ragione sociale,
+
+cognome
+
+cf/Piva
+
+password
+
+email
+
+in un secondo blocco
+
+indirizzo
+
+interno cap città provincia
+
+in un altro blocco
+
+numero carta di credito,
+
+data scadenza
+
+codice segreto
+
+
+
+ -->
